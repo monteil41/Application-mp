@@ -15,9 +15,9 @@ export class HomePage {
   };
 
   @ViewChild('map') mapElement: ElementRef;
-  
+
   constructor(public navCtrl: NavController, public geolocation: Geolocation, public mapsProvider: MapsProvider) {
-    
+
   }
 
   ionViewDidLoad() {
