@@ -27,10 +27,20 @@ export class JsMapsProvider {
 
     //--- declarations des marqueurs ---//
 
+    this.addMarker_OT(this.map);
     // utilisateur
-    this.addMarker_User(this.map);
-    // madeleine
 
+    // madeleine
+    this.addMarker_bijou(this.map);
+    this.addMarker_bouledor(this.map);
+    this.addMarker_tigoulet(this.map);
+    this.addMarker_cerise(this.map);
+    this.addMarker_croquembouche(this.map);
+    this.addMarker_fournilaredien(this.map);
+    this.addMarker_fournilclaire(this.map);
+    this.addMarker_renard(this.map);
+    this.addMarker_antan(this.map);
+    this.addMarker_vanilleetchocolat(this.map);
 
     // porcelaine
     this.addMarker_caffy(this.map);
@@ -49,22 +59,27 @@ export class JsMapsProvider {
     //--- Ajout des marqueurs ---//
 
 //-----------------------UTILISATEUR--------------------------------//
-addMarker_User(map:any){
 
-  let marker = new google.maps.Marker({
-  map: map,
-  animation: google.maps.Animation.DROP,
-  position: map.getCenter(),
-  icon: "assets/imgs/you.png"
-  });
-}
+
+//-----------------------OFFICE DE TOURISME---------------------------------//
+  addMarker_OT(map:any){
+    var myLatLng = {lat: 45.513335, lng: 1.20329};
+    let marker = new google.maps.Marker({
+    map: map,
+    animation: google.maps.Animation.DROP,
+    position: myLatLng,
+    icon: "assets/imgs/office6.png"
+    });
+  }
+
 //-----------------------PORCELAINE---------------------------------//
   addMarker_brindherbe(map:any){
     var myLatLng = {lat: 45.519633, lng: 1.203393};
     let marker = new google.maps.Marker({
     map: map,
     animation: google.maps.Animation.DROP,
-    position: myLatLng
+    position: myLatLng,
+    icon: "assets/imgs/porcelaine.png"
     });
   }
 
@@ -75,6 +90,7 @@ addMarker_User(map:any){
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/porcelaine.png"
     });
   }
 
@@ -85,6 +101,7 @@ addMarker_User(map:any){
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/porcelaine.png"
     });
   }
 
@@ -95,6 +112,7 @@ addMarker_User(map:any){
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/porcelaine.png"
     });
   }
 
@@ -105,11 +123,12 @@ addMarker_User(map:any){
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/porcelaine.png"
     });
   }
 
   addMarker_couchou(map:any){
-    var contentString = "coucou"
+    var contentString = "<h1 class='titre'> Galerie du couchou </h1> <p> galerie de porcelaine </p>"
     var infowindow = new google.maps.InfoWindow({
     content: contentString
   });
@@ -118,6 +137,7 @@ addMarker_User(map:any){
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/porcelaine.png"
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -125,13 +145,23 @@ addMarker_User(map:any){
   }
 
   addMarker_patrimoine(map:any){
-
+    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
     var myLatLng = {lat: 45.515729, lng: 1.202694};
     let marker = new google.maps.Marker({
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/porcelaine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+    });
+
+
+
   }
 
   addMarker_samie(map:any){
@@ -141,6 +171,7 @@ addMarker_User(map:any){
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/porcelaine.png"
     });
   }
 
@@ -151,6 +182,7 @@ addMarker_User(map:any){
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/porcelaine.png"
     });
   }
 
@@ -161,7 +193,139 @@ addMarker_User(map:any){
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/porcelaine.png"
     });
   }
   //-----------------------MADELEINE---------------------------------//
+
+  addMarker_bijou(map:any){
+    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
+    var myLatLng = {lat: 45.48511209999999, lng: 1.1912786000000324};
+    let marker = new google.maps.Marker({
+    map: map,
+    animation: google.maps.Animation.DROP,
+    position: myLatLng,
+      icon: "assets/imgs/porcelaine.png"
+    });
+  }
+
+  addMarker_bouledor(map:any){
+    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
+    var myLatLng = {lat: 45.535794, lng: 1.208836};
+    let marker = new google.maps.Marker({
+    map: map,
+    animation: google.maps.Animation.DROP,
+    position: myLatLng,
+    });
+  }
+
+  addMarker_tigoulet(map:any){
+    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
+    var myLatLng = {lat: 45.524803, lng: 1.211017};
+    let marker = new google.maps.Marker({
+    map: map,
+    animation: google.maps.Animation.DROP,
+    position: myLatLng,
+    });
+  }
+
+  addMarker_cerise(map:any){
+    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
+    var myLatLng = {lat: 45.514355, lng: 1.203028};
+    let marker = new google.maps.Marker({
+    map: map,
+    animation: google.maps.Animation.DROP,
+    position: myLatLng,
+    });
+  }
+
+  addMarker_croquembouche(map:any){
+    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
+    var myLatLng = {lat: 45.51407, lng: 1.201118};
+    let marker = new google.maps.Marker({
+    map: map,
+    animation: google.maps.Animation.DROP,
+    position: myLatLng,
+    });
+  }
+
+  addMarker_fournilaredien(map:any){
+    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
+    var myLatLng = {lat: 45.515801, lng: 1.205408};
+    let marker = new google.maps.Marker({
+    map: map,
+    animation: google.maps.Animation.DROP,
+    position: myLatLng,
+    });
+  }
+
+  addMarker_fournilclaire(map:any){
+    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
+    var myLatLng = {lat: 45.50936, lng: 1.206834};
+    let marker = new google.maps.Marker({
+    map: map,
+    animation: google.maps.Animation.DROP,
+    position: myLatLng,
+    });
+  }
+
+  addMarker_renard(map:any){
+    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
+    var myLatLng = {lat: 45.510703, lng: 1.201543};
+    let marker = new google.maps.Marker({
+    map: map,
+    animation: google.maps.Animation.DROP,
+    position: myLatLng,
+    });
+  }
+
+  addMarker_antan(map:any){
+    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
+    var myLatLng = {lat: 45.513408, lng: 1.203568};
+    let marker = new google.maps.Marker({
+    map: map,
+    animation: google.maps.Animation.DROP,
+    position: myLatLng,
+    });
+  }
+
+  addMarker_vanilleetchocolat(map:any){
+    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
+    var myLatLng = {lat: 45.511259, lng: 1.201471};
+    let marker = new google.maps.Marker({
+    map: map,
+    animation: google.maps.Animation.DROP,
+    position: myLatLng,
+    });
+  }
 }
