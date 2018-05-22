@@ -7,6 +7,7 @@ export class JsMapsProvider {
 
   map: any;
 
+
   constructor() {
 
   }
@@ -29,6 +30,8 @@ export class JsMapsProvider {
 
     this.addMarker_OT(this.map);
     // utilisateur
+
+    this.addMarker_user(this.map);
 
     // madeleine
     this.addMarker_bijou(this.map);
@@ -59,7 +62,15 @@ export class JsMapsProvider {
     //--- Ajout des marqueurs ---//
 
 //-----------------------UTILISATEUR--------------------------------//
+addMarker_user(map:any){
 
+    let marker = new google.maps.Marker({
+    map: map,
+    animation: google.maps.Animation.DROP,
+    position: map.getCenter(),
+    icon: "assets/imgs/you.png",
+    });
+  }
 
 //-----------------------OFFICE DE TOURISME---------------------------------//
   addMarker_OT(map:any){
@@ -208,7 +219,7 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-      icon: "assets/imgs/porcelaine.png"
+    icon: "assets/imgs/madeleine.png"
     });
   }
 
@@ -222,6 +233,7 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/madeleine.png"
     });
   }
 
@@ -235,6 +247,7 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/madeleine.png"
     });
   }
 
@@ -248,6 +261,7 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/madeleine.png"
     });
   }
 
@@ -261,6 +275,7 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/madeleine.png"
     });
   }
 
@@ -274,6 +289,7 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/madeleine.png"
     });
   }
 
@@ -287,6 +303,7 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/madeleine.png"
     });
   }
 
@@ -300,6 +317,7 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/madeleine.png"
     });
   }
 
@@ -313,6 +331,7 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/madeleine.png"
     });
   }
 
@@ -326,6 +345,7 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
+    icon: "assets/imgs/madeleine.png"
     });
   }
 }

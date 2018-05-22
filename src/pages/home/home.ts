@@ -11,7 +11,8 @@ export class HomePage {
 
   location: {
     latitude: number,
-    longitude: number
+    longitude: number,
+    places : Array<any> ;
   };
 
   @ViewChild('map') mapElement: ElementRef;
@@ -29,6 +30,7 @@ export class HomePage {
       enableHighAccuracy: true,
       timeout: 25000
     };
+    
 
 
     this.geolocation.getCurrentPosition(options).then((position) => {

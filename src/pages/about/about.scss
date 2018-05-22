@@ -1,3 +1,57 @@
 page-about {
 
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+
+      div.scroll-content{
+        padding: 0px;
+        margin: 0px;
+      }
+
+      .scroll-content{
+        padding: 0px!important;
+      }
+
+      h1{
+        font-size: 20px;
+        padding-left: 5px;
+      }
+
+      p{
+        padding-left: 5px;
+      }
+
+      ul{
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+      }
+      li.section{
+        width: 100%;
+        list-style: none;
+        border-top: 1px solid black;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: white;
+
+      }
+
+      .content-md{
+        background-color: grey;
+      }
+
+      .content-ios{
+        background-color: grey;
+      }
+
+      div.droite{
+        float: right;
+        width: 80%;
+      }
+
+      div.gauche{
+        padding-left: 5px;
+      }
+
 }

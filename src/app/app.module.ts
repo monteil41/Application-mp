@@ -4,8 +4,9 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { Geolocation } from '@ionic-native/geolocation';
-
 import { MyApp } from './app.component';
+import { TabsPage } from '../pages/tabs/tabs';
+import { AboutPage } from '../pages/about/about';
 import { HomePage } from '../pages/home/home';
 import { MapsProvider } from '../providers/maps/maps';
 import { JsMapsProvider } from '../providers/js-maps/js-maps';
@@ -15,7 +16,9 @@ import { GoogleMaps } from '@ionic-native/google-maps';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    TabsPage,
+    AboutPage
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,9 @@ import { GoogleMaps } from '@ionic-native/google-maps';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    AboutPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
