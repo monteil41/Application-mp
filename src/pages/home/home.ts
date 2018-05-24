@@ -30,7 +30,7 @@ export class HomePage {
       enableHighAccuracy: true,
       timeout: 25000
     };
-    
+
 
 
     this.geolocation.getCurrentPosition(options).then((position) => {

@@ -14,71 +14,16 @@
 
 
 <ion-content padding>
-  <div>
-    <ul>
-      <li class="section">
-        <div class="droite">
-          <h1>Galerie du couchou</h1>
-          <p>Galerie d'exposition de Porcelaine par Patrick Audevard</p>
-        </div>
-        <div class="gauche">
-          <img src="assets/imgs/madeleine.png">
-        </div>
-      </li >
-      <li class="section">
-        <div class="droite">
-          <h1>Galerie du couchou</h1>
-          <p>Galerie d'exposition de Porcelaine par Patrick Audevard</p>
-        </div>
-        <div class="gauche">
-          <img src="assets/imgs/madeleine.png">
-        </div>
-      </li >
-      <li class="section">
-        <div class="droite">
-          <h1>Galerie du couchou</h1>
-          <p>Galerie d'exposition de Porcelaine par Patrick Audevard</p>
-        </div>
-        <div class="gauche">
-          <img src="assets/imgs/madeleine.png">
-        </div>
-      </li >
-      <li class="section">
-        <div class="droite">
-          <h1>Galerie du couchou</h1>
-          <p>Galerie d'exposition de Porcelaine par Patrick Audevard</p>
-        </div>
-        <div class="gauche">
-          <img src="assets/imgs/madeleine.png">
-        </div>
-      </li >
-      <li class="section">
-        <div class="droite">
-          <h1>Galerie du couchou</h1>
-          <p>Galerie d'exposition de Porcelaine par Patrick Audevard</p>
-        </div>
-        <div class="gauche">
-          <img src="assets/imgs/madeleine.png">
-        </div>
-      </li >
-      <li class="section">
-        <div class="droite">
-          <h1>Galerie du couchou</h1>
-          <p>Galerie d'exposition de Porcelaine par Patrick Audevard</p>
-        </div>
-        <div class="gauche">
-          <img src="assets/imgs/madeleine.png">
-        </div>
-      </li >
-      <li class="section">
-        <div class="droite">
-          <h1>Galerie du couchou</h1>
-          <p>Galerie d'exposition de Porcelaine par Patrick Audevard</p>
-        </div>
-        <div class="gauche">
-          <img src="assets/imgs/madeleine.png">
-        </div>
-      </li >
-    </ul>
-  </div>
+  <button class="btn1" ion-button full [navPush]="MadeleineInfo">
+    <div class="cadre">
+      <img class="icon_btn" src="../assets/imgs/logo-madeleine.png">
+      <h1>Madeleine</h1>
+    </div>
+  </button>
+  <button class="btn2" ion-button full [navPush]="PorcelaineInfo">
+    <div class="cadre">
+      <img class="icon_btn" src="../assets/imgs/logo-porcelaine.png">
+      <h1>Porcelaine</h1>
+    </div>
+  </button>
 </ion-content>

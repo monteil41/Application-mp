@@ -85,6 +85,10 @@ addMarker_user(map:any){
 
 //-----------------------PORCELAINE---------------------------------//
   addMarker_brindherbe(map:any){
+    var contentString = "<h1 class='titre'> Atelier Brin d'herbe </h1> <p> Atelier de Porcelaine </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
     var myLatLng = {lat: 45.519633, lng: 1.203393};
     let marker = new google.maps.Marker({
     map: map,
@@ -92,10 +96,16 @@ addMarker_user(map:any){
     position: myLatLng,
     icon: "assets/imgs/porcelaine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
   }
 
   addMarker_caffy(map:any){
-
+    var contentString = "<h1 class='titre'> Atelier Caffy </h1> <p> Atelier de Porcelaine </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
     var myLatLng = {lat: 45.429, lng: 1.302};
     let marker = new google.maps.Marker({
     map: map,
@@ -103,10 +113,16 @@ addMarker_user(map:any){
     position: myLatLng,
     icon: "assets/imgs/porcelaine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
   }
 
   addMarker_marcognac(map:any){
-
+    var contentString = "<h1 class='titre'> Carrière de Marcognac </h1> <p> Carrière de Marcognac </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
     var myLatLng = {lat: 45.519261, lng: 1.251772};
     let marker = new google.maps.Marker({
     map: map,
@@ -114,10 +130,16 @@ addMarker_user(map:any){
     position: myLatLng,
     icon: "assets/imgs/porcelaine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
   }
 
   addMarker_laseynie(map:any){
-
+    var contentString = "<h1 class='titre'> Espace La Seynie </h1> <p> manufacture de porcelaine de Limoges </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
     var myLatLng = {lat: 45.508028, lng: 1.217566};
     let marker = new google.maps.Marker({
     map: map,
@@ -125,10 +147,16 @@ addMarker_user(map:any){
     position: myLatLng,
     icon: "assets/imgs/porcelaine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
   }
 
   addMarker_salomon(map:any){
-
+    var contentString = "<h1 class='titre'> Salomon </h1> <p> Magasin de Porcelaine </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
     var myLatLng = {lat: 45.502287, lng: 1.206459};
     let marker = new google.maps.Marker({
     map: map,
@@ -136,6 +164,9 @@ addMarker_user(map:any){
     position: myLatLng,
     icon: "assets/imgs/porcelaine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
   }
 
   addMarker_couchou(map:any){
@@ -156,10 +187,10 @@ addMarker_user(map:any){
   }
 
   addMarker_patrimoine(map:any){
-    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var contentString = "<h1 class='titre'> Maison du Patrimoine </h1> <p> Patrimoine de la ville de Saint-Yrieix </p>"
     var infowindow = new google.maps.InfoWindow({
     content: contentString
-  });
+    });
     var myLatLng = {lat: 45.515729, lng: 1.202694};
     let marker = new google.maps.Marker({
     map: map,
@@ -176,7 +207,10 @@ addMarker_user(map:any){
   }
 
   addMarker_samie(map:any){
-
+    var contentString = "<h1 class='titre'> MP Samie </h1> <p> magasin de porcelaine </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
     var myLatLng = {lat: 45.514381, lng: 1.202118};
     let marker = new google.maps.Marker({
     map: map,
@@ -184,10 +218,16 @@ addMarker_user(map:any){
     position: myLatLng,
     icon: "assets/imgs/porcelaine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+    });
   }
 
   addMarker_samie2(map:any){
-
+    var contentString = "<h1 class='titre'> MP Samie </h1> <p> magasin de porcelaine </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
     var myLatLng = {lat: 45.559212, lng: 1.209384};
     let marker = new google.maps.Marker({
     map: map,
@@ -195,22 +235,31 @@ addMarker_user(map:any){
     position: myLatLng,
     icon: "assets/imgs/porcelaine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+    });
   }
 
   addMarker_palloux(map:any){
-
-    var myLatLng = {lat: 45.531414, lng: 1.204521};
+    var contentString = "<h1 class='titre'> Village de la Porcelaine Les Palloux </h1> <p> magasin de porcelaine </p>"
+    var infowindow = new google.maps.InfoWindow({
+    content: contentString
+    });
+    var myLatLng = {lat: 45.531224, lng: 1.205117};
     let marker = new google.maps.Marker({
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
     icon: "assets/imgs/porcelaine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+    });
   }
   //-----------------------MADELEINE---------------------------------//
 
   addMarker_bijou(map:any){
-    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var contentString = "<h1 class='titre'> Madeleine Bijou </h1> <p> Magasin de madeleines </p>"
     var infowindow = new google.maps.InfoWindow({
     content: contentString
     });
@@ -221,10 +270,13 @@ addMarker_user(map:any){
     position: myLatLng,
     icon: "assets/imgs/madeleine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+    });
   }
 
   addMarker_bouledor(map:any){
-    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var contentString = "<h1 class='titre'> Boule d'Or </h1> <p> Magasin de madeleines </p>"
     var infowindow = new google.maps.InfoWindow({
     content: contentString
     });
@@ -235,10 +287,13 @@ addMarker_user(map:any){
     position: myLatLng,
     icon: "assets/imgs/madeleine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+    });
   }
 
   addMarker_tigoulet(map:any){
-    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var contentString = "<h1 class='titre'> Gilles Tigoulet </h1> <p> Madeleines maison </p>"
     var infowindow = new google.maps.InfoWindow({
     content: contentString
     });
@@ -249,10 +304,13 @@ addMarker_user(map:any){
     position: myLatLng,
     icon: "assets/imgs/madeleine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+    });
   }
 
   addMarker_cerise(map:any){
-    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var contentString = "<h1 class='titre'> La Cerise sur le gâteau </h1> <p> Madeleines maison </p>"
     var infowindow = new google.maps.InfoWindow({
     content: contentString
     });
@@ -263,10 +321,13 @@ addMarker_user(map:any){
     position: myLatLng,
     icon: "assets/imgs/madeleine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+    });
   }
 
   addMarker_croquembouche(map:any){
-    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var contentString = "<h1 class='titre'> Le Croquembouche </h1> <p> Madeleines maison </p>"
     var infowindow = new google.maps.InfoWindow({
     content: contentString
     });
@@ -277,10 +338,13 @@ addMarker_user(map:any){
     position: myLatLng,
     icon: "assets/imgs/madeleine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+    });
   }
 
   addMarker_fournilaredien(map:any){
-    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var contentString = "<h1 class='titre'> le Fournil Aredien </h1> <p> Madeleines maison </p>"
     var infowindow = new google.maps.InfoWindow({
     content: contentString
     });
@@ -291,10 +355,13 @@ addMarker_user(map:any){
     position: myLatLng,
     icon: "assets/imgs/madeleine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+    });
   }
 
   addMarker_fournilclaire(map:any){
-    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var contentString = "<h1 class='titre'> le Fournil de Claire </h1> <p> Madeleines maison </p>"
     var infowindow = new google.maps.InfoWindow({
     content: contentString
     });
@@ -305,10 +372,13 @@ addMarker_user(map:any){
     position: myLatLng,
     icon: "assets/imgs/madeleine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+    });
   }
 
   addMarker_renard(map:any){
-    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var contentString = "<h1 class='titre'> Maison Renard </h1> <p> Madeleines maison </p>"
     var infowindow = new google.maps.InfoWindow({
     content: contentString
     });
@@ -319,10 +389,13 @@ addMarker_user(map:any){
     position: myLatLng,
     icon: "assets/imgs/madeleine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+    });
   }
 
   addMarker_antan(map:any){
-    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var contentString = "<h1 class='titre'> Delice d'Antan </h1> <p> Madeleines maison </p>"
     var infowindow = new google.maps.InfoWindow({
     content: contentString
     });
@@ -333,10 +406,13 @@ addMarker_user(map:any){
     position: myLatLng,
     icon: "assets/imgs/madeleine.png"
     });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
+    });
   }
 
   addMarker_vanilleetchocolat(map:any){
-    var contentString = "<h1 class='titre'> Galerie du curlucucu </h1> <p> galerie de porcelaine </p>"
+    var contentString = "<h1 class='titre'> Vanille & Chocolat </h1> <p>Madeleines maison</p>"
     var infowindow = new google.maps.InfoWindow({
     content: contentString
     });
@@ -346,6 +422,9 @@ addMarker_user(map:any){
     animation: google.maps.Animation.DROP,
     position: myLatLng,
     icon: "assets/imgs/madeleine.png"
+    });
+    marker.addListener('click', function() {
+    infowindow.open(map, marker);
     });
   }
 }
