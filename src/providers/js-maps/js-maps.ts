@@ -61,21 +61,12 @@ export class JsMapsProvider {
 
     //--- Ajout des marqueurs ---//
 
-//-----------------------UTILISATEUR--------------------------------//
-addMarker_user(map:any){
 
-    let marker = new google.maps.Marker({
-    map: map,
-    animation: google.maps.Animation.DROP,
-    position: map.getCenter(),
-    icon: "assets/imgs/you.png",
-    });
-  }
 
 //-----------------------OFFICE DE TOURISME---------------------------------//
   addMarker_OT(map:any){
     var myLatLng = {lat: 45.513335, lng: 1.20329};
-    let marker = new google.maps.Marker({
+    new google.maps.Marker({
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
@@ -124,14 +115,14 @@ addMarker_user(map:any){
     content: contentString
     });
     var myLatLng = {lat: 45.519261, lng: 1.251772};
-    let marker = new google.maps.Marker({
+    let addMarker_marcognac = new google.maps.Marker({
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
     icon: "assets/imgs/porcelaine.png"
     });
-    marker.addListener('click', function() {
-    infowindow.open(map, marker);
+    addMarker_marcognac.addListener('click', function() {
+    infowindow.open(map, addMarker_marcognac);
   });
   }
 
@@ -427,4 +418,15 @@ addMarker_user(map:any){
     infowindow.open(map, marker);
     });
   }
+
+  //-----------------------UTILISATEUR--------------------------------//
+  addMarker_user(map:any){
+
+      new google.maps.Marker({
+      map: map,
+      animation: google.maps.Animation.DROP,
+      position: map.getCenter(),
+      icon: "assets/imgs/you.png",
+      });
+    }
 }

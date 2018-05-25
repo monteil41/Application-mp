@@ -12,7 +12,7 @@ export class HomePage {
   location: {
     latitude: number,
     longitude: number,
-    places : Array<any> ;
+  //  places : Array<any> ;
   };
 
   @ViewChild('map') mapElement: ElementRef;
@@ -38,6 +38,7 @@ export class HomePage {
       this.location = {
         latitude: position.coords.latitude,
         longitude: position.coords.longitude
+
       };
 
       this.mapsProvider.init(this.location, this.mapElement);
