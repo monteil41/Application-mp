@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { TabsPage } from '../pages/tabs/tabs';
 import { AboutPage } from '../pages/about/about';
 import { HomePage } from '../pages/home/home';
+import { ActuPage } from '../pages/actu/actu';
 import { MadeleinePage } from '../pages/madeleine/madeleine';
 import { PorcelainePage } from '../pages/porcelaine/porcelaine';
 import { MapsProvider } from '../providers/maps/maps';
@@ -22,7 +23,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     TabsPage,
     AboutPage,
     MadeleinePage,
-    PorcelainePage
+    PorcelainePage,
+    ActuPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     AboutPage,
     TabsPage,
     MadeleinePage,
-    PorcelainePage
+    PorcelainePage,
+    ActuPage
   ],
   providers: [
     StatusBar,
