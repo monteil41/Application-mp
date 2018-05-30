@@ -1,1 +1,0 @@
-Companion code for the Ionic Google Maps tutorial at [Ionic Google Maps](https://baadiersydow.com/ionic-google-maps-geolocation-native-javascript-ios-android/) 

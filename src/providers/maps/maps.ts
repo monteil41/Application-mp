@@ -10,9 +10,9 @@ export class MapsProvider {
   map: any;
 
   constructor(public platform: Platform) {
-    if(this.platform.is('cordova') && 
+    if(this.platform.is('cordova') &&
       (this.platform.is('ios') || this.platform.is('android'))){
-      this.map = new NativeMapsProvider(GoogleMaps);
+      this.map = new JsMapsProvider();
     } else {
       this.map = new JsMapsProvider();
     }
