@@ -70,7 +70,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/office6.png"
+    icon: new google.maps.MarkerImage('assets/imgs/office-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
   }
 
@@ -85,7 +86,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/porcelaine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/porcelaine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -102,7 +104,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/porcelaine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/porcelaine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -119,7 +122,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/porcelaine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/porcelaine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     addMarker_marcognac.addListener('click', function() {
     infowindow.open(map, addMarker_marcognac);
@@ -136,7 +140,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/porcelaine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/porcelaine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -153,7 +158,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/porcelaine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/porcelaine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -170,7 +176,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/porcelaine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/porcelaine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -187,7 +194,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/porcelaine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/porcelaine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -207,7 +215,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/porcelaine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/porcelaine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -224,7 +233,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/porcelaine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/porcelaine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -241,7 +251,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/porcelaine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/porcelaine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -259,7 +270,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/madeleine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/madeleine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -276,8 +288,9 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/madeleine.png"
-    });
+    icon: new google.maps.MarkerImage('assets/imgs/madeleine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
+      });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
     });
@@ -293,7 +306,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/madeleine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/madeleine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -310,7 +324,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/madeleine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/madeleine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -327,7 +342,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/madeleine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/madeleine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -344,7 +360,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/madeleine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/madeleine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -361,7 +378,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/madeleine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/madeleine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -378,7 +396,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/madeleine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/madeleine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -390,12 +409,13 @@ export class JsMapsProvider {
     var infowindow = new google.maps.InfoWindow({
     content: contentString
     });
-    var myLatLng = {lat: 45.513408, lng: 1.203568};
+    var myLatLng = {lat: 45.513441, lng: 1.203539};
     let marker = new google.maps.Marker({
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/madeleine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/madeleine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -412,7 +432,8 @@ export class JsMapsProvider {
     map: map,
     animation: google.maps.Animation.DROP,
     position: myLatLng,
-    icon: "assets/imgs/madeleine.png"
+    icon: new google.maps.MarkerImage('assets/imgs/madeleine-icone.png',
+    null, null, null, new google.maps.Size(30,55)),
     });
     marker.addListener('click', function() {
     infowindow.open(map, marker);
@@ -426,7 +447,8 @@ export class JsMapsProvider {
       map: map,
       animation: google.maps.Animation.DROP,
       position: map.getCenter(),
-      icon: "assets/imgs/you.png",
+      icon: new google.maps.MarkerImage('assets/imgs/you.png',
+      null, null, null, new google.maps.Size(30,55)),
       });
     }
 }
