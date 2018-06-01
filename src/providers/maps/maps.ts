@@ -1,8 +1,7 @@
 import { Platform } from 'ionic-angular';
 import { Injectable } from '@angular/core';
 import { JsMapsProvider } from './../js-maps/js-maps';
-import { NativeMapsProvider } from './../native-maps/native-maps';
-import { GoogleMaps } from '@ionic-native/google-maps';
+
 
 @Injectable()
 export class MapsProvider {
