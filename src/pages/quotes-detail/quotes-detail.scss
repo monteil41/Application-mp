@@ -1,0 +1,41 @@
+page-quotes-detail {
+
+  padding: 0px;
+  margin: 0px;
+
+  h1.title-content{
+    color: white;
+  }
+
+  div.scroll-content{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+
+  }
+
+  ion-card img{
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+
+  .card-header-ios{
+    padding: 0px;
+  }
+  .card-header-android{
+    padding: 0px;
+  }
+
+  h1.title-content{
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+
+  div.fond-title{
+    background-color: #7fbc41;
+    padding-top: 8px;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+  }
+}

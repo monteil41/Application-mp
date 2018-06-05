@@ -17,6 +17,9 @@ import { JsMapsProvider } from '../providers/js-maps/js-maps';
 import { NativeMapsProvider } from '../providers/native-maps/native-maps';
 import { GoogleMaps } from '@ionic-native/google-maps';
 
+import { QuotesProvider } from '../providers/quotes/quotes';
+import {HttpClientModule} from '@angular/common/http';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -31,7 +34,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -53,7 +57,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     MapsProvider,
     JsMapsProvider,
     NativeMapsProvider,
-    GoogleMaps
+    GoogleMaps,
+    QuotesProvider
   ]
 })
 export class AppModule {}
